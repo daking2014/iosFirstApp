@@ -57,6 +57,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eyd-i6-TOD">
                                 <rect key="frame" x="17" y="270" width="68" height="30"/>
                                 <state key="normal" title="Start over"/>
+                                <connections>
+                                    <action selector="startOver" destination="BYZ-38-t0r" eventType="touchUpInside" id="A69-Z5-91e"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6VY-bW-yBr">
                                 <rect key="frame" x="109" y="274" width="50" height="21"/>
@@ -90,7 +93,10 @@
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
+                        <outlet property="roundLabel" destination="PFk-Au-iBo" id="Dvn-xt-WLN"/>
+                        <outlet property="scoreLabel" destination="6Ca-Uf-Dh1" id="ZpB-aZ-jEn"/>
                         <outlet property="slider" destination="Yp9-9Q-dQa" id="mpu-Ox-fzr"/>
+                        <outlet property="targetLabel" destination="VPv-GN-Yq9" id="Sdt-p7-IuZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
